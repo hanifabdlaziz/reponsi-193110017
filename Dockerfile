@@ -1,8 +1,8 @@
-FROM httpd:2.4
+FROM centos:latest
 
 MAINTAINER Hanif
 
-RUN apt-get install -y httpd
+RUN yum -y install httpd
 
 COPY index.html /var/www/html/
 
